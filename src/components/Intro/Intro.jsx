@@ -17,7 +17,7 @@ const fanArts = [
   "https://ik.imagekit.io/4bkho8jgt/fanart-6_2KeEd59iR.png",
   "https://ik.imagekit.io/4bkho8jgt/fanart-3_UpRou5kb5.png",
   "https://ik.imagekit.io/4bkho8jgt/fanart-5_1do1ZDnAS.png",
-    "https://ik.imagekit.io/4bkho8jgt/fanart-7_ZzUWHzg-Yt.png",
+  "https://ik.imagekit.io/4bkho8jgt/fanart-7_ZzUWHzg-Yt.png",
 ];
 
 const positions = [
@@ -137,13 +137,13 @@ useEffect(() => {
               <div className="infoTextContainer">
                 <div className="infoHeaderBox">
                   <h1 className="mainText floating-text">寿海 浮</h1>
-                  <h1 className="secondText floating-text">コトミウキ／歌とポケモン</h1>
+                  <h1 className="secondText floating-text">歌とポケモンV-Tuber</h1>
                 </div>
                 <div className="infoDescriptionBox">
-                  <h1 className="infoDescription">見つけてくれてありがとう！</h1>
-                  <h1 className="infoDescription">
+                  <p className="infoDescription">見つけてくれてありがとう！</p>
+                  <p className="infoDescription">
                     歌いながらポケモンをするバーチャル女、コトミ ウキです！！
-                  </h1>
+                  </p>
                 </div>
                 <BounceCards className="infoBounceCardBox"
                   images={[

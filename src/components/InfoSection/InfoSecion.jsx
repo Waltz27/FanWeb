@@ -17,14 +17,14 @@ export default function InfoSection() {
         <a className="info-row" href="https://www.youtube.com/@KotomiUki/featured" target="_blank"> 
             <div className="info-text">
             <div className="text-version v1">
-                <h2>私の趣味～</h2>
+                <h1>私の趣味～</h1>
                 <p>熱心なポケモンファンとして、ランポケモンゲームを楽しんでいます。 </p>
                 <p> YouTubeでポケモンZAの配信をたくさんやっていて、</p>
                 <p> SVもよくプレイしています。</p>
             </div>
 
             <div className="text-version v2">
-                <h2>私の趣味～</h2>
+                <h1>私の趣味～</h1>
                 <p>それ以外にも、元々面白い動画も用意しているです！</p>
                 <p> ぜひチェックしてみてね～</p>
                 <p> Come And Watch My Stream～～!</p>
@@ -46,7 +46,7 @@ export default function InfoSection() {
         <a className="info-row reverse" href="https://www.youtube.com/@KotomiUki/featured" target="_blank">
             <div className="info-text">
             <div className="text-version v1">
-                <h2>チャンネルイベント</h2>
+                <h1>チャンネルイベント</h1>
                 <p>時々、ファンイベントやグッズ販売もあります～</p>
                 <li>ポケモン交換</li>
                 <li>レイドイベント</li>

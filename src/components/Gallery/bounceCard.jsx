@@ -5,9 +5,7 @@ import './bounceCard.css';
 export default function BounceCards({
   className = '',
   images = [],
-  links = [], // ✅ FIXED
-  containerWidth = 400,
-  containerHeight = 400,
+  links = [], 
   animationDelay = 0.5,
   animationStagger = 0.06,
   easeType = 'elastic.out(1, 0.8)',
@@ -106,8 +104,6 @@ export default function BounceCards({
       className={`bounceCardsContainer ${className}`}
       style={{
         position: 'relative',
-        width: containerWidth,
-        height: containerHeight
       }}
     >
       {images.map((src, idx) => {

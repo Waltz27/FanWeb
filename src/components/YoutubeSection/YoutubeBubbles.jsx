@@ -12,7 +12,17 @@ const YoutubeBubbles = () => {
 
   useLayoutEffect(() => {
     const bubbles = gsap.utils.toArray(".yt-bubble");
-    const xSlots = [-600, -350, -150, 70, 300, 600];
+   const screenWidth = window.innerWidth;
+    const maxX = screenWidth * 0.35; 
+    const xSlots = [
+      -maxX,
+      -maxX * 0.6,
+      -maxX * 0.3,
+      maxX * 0.3,
+      maxX * 0.6,
+      maxX
+    ];
+
 
     bubbles.forEach((bubble, i) => {
       gsap.set(bubble, {
@@ -24,7 +34,7 @@ const YoutubeBubbles = () => {
 
     gsap.to(bubbles, {
       opacity: 1,
-      y: () => gsap.utils.random(-20, -60),
+      y: () => gsap.utils.random(-20, -window.innerHeight * 0.25),
       duration: 5,
       ease: "power2.out",
       scrollTrigger: {
