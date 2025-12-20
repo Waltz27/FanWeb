@@ -27,28 +27,6 @@ li {
   font-size: 30px;
 }
 
-@media (max-width: 1366px) {
-  h1 {
-    font-size: 48px;
-  }
-
-  p,
-  li {
-    font-size: 24px;
-  }
-}
-
-@media (max-width: 1024px) {
-  h1 {
-    font-size: 40px;
-  }
-
-  p,
-  li {
-    font-size: 20px;
-  }
-}
-
 /*Html/body*/
 * {
   margin: 0;
@@ -632,22 +610,6 @@ height: 30px;;
   cursor:pointer;
   opacity: 0;
 }
-/* Small laptops */
-@media (max-width: 1366px) {
-  .yt-bubble {
-    width: 160px;
-    height: 160px;
-  }
-}
-
-/* Tablets */
-@media (max-width: 1024px) {
-  .yt-bubble {
-    width: 120px;
-    height: 120px;
-  }
-}
-
 .yt-bubble span {
   position: absolute;
   border-radius: 50%;
@@ -990,4 +952,37 @@ height: 30px;;
   font-size: 0.8em;
   opacity: 0.85;
   color: #191919;
+}
+@media (max-width: 1366px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  p,
+  li {
+    font-size: 24px;
+  }
+  .yt-bubble {
+   scale: 0.8;
+  }
+  .infoContainer{
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  p,
+  li {
+    font-size: 20px;
+  }
+  .yt-bubble {
+   scale: 0.9;
+  }
+  .infoContainer{
+    padding: 20px;
+  }
 }

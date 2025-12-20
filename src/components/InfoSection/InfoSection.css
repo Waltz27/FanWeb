@@ -14,12 +14,14 @@
 .info-row {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
   width:100%;
   align-items: center;
   cursor: pointer;
 }
 
 .info-row.reverse {
+  gap: 25px;
   direction: rtl;
 }
 

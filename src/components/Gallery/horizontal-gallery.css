@@ -150,6 +150,18 @@ place-items: center;
   place-items: center;
   transition: 0.7s ease-in;
 }
+@media (max-width: 1366px) {
+  .video-thumbnail  {
+   scale: 1.2;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .video-thumbnail  {
+   scale: 1.3;
+  }
+}
 
 .gallery-wrapper.compact .video-thumbnail {
   width: 18vw;
