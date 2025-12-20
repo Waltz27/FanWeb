@@ -162,7 +162,6 @@ useEffect(() => {
                   animationStagger={0.1}
                 />
               </div>
-
               <div className="infoImageBox"/>
             </div>
           </div>
