@@ -367,7 +367,7 @@ filter: opacity(1);
 }
 .indicator {
   position: absolute;
-  left: calc(50%+2.5px);
+  left: calc(50% + 2.5px);
   width: 195px;
   height: 1px;
   background-color: transparent;
