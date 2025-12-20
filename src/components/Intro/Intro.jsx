@@ -18,6 +18,7 @@ const fanArts = [
   "https://ik.imagekit.io/4bkho8jgt/fanart-3_UpRou5kb5.png",
   "https://ik.imagekit.io/4bkho8jgt/fanart-5_1do1ZDnAS.png",
   "https://ik.imagekit.io/4bkho8jgt/fanart-7_ZzUWHzg-Yt.png",
+  "https://ik.imagekit.io/4bkho8jgt/%E3%81%AB%E3%81%92%E3%82%8B%EF%BD%9E%EF%BD%9E_jkt09SniB.png",
 ];
 
 const positions = [
@@ -27,7 +28,8 @@ const positions = [
   "position-4",
   "position-5",
   "position-6",
-  "position-7"
+  "position-7",
+  "position-8",
 ];
 
 const randomFanArts = fanArts.map((img, index) => {
