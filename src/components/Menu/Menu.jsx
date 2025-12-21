@@ -45,15 +45,14 @@ const Menu = () => {
           </a>
         </li>
         <li style={{ "--i": 3 }}>
-          <a href="#twitter">
-            <ion-icon name="logo-twitter"></ion-icon>
+         <a href="#youtube">
+            <ion-icon name="logo-youtube"></ion-icon>
           </a>
         </li>
         <li style={{ "--i": 4 }}>
-           <a href="#youtube">
-            <ion-icon name="logo-youtube"></ion-icon>
+          <a href="#twitter">
+            <ion-icon name="logo-twitter"></ion-icon>
           </a>
-          
         </li>
         <li style={{ "--i": 5 }}>
         <a href="#gallery">
