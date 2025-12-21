@@ -947,14 +947,12 @@ height: 30px;;
   .yt-playlist-page, .yt-playlist-children {
     gap: 12px;
   }
-  .rise{
-    width: 150px;
+  .rise, .risingNote{
+    width: 200px;
   }
+
   .menu{
     scale: 0.7;
-  }
-  .menu li {
-    font-size: 16px;
   }
 }
 
@@ -973,13 +971,11 @@ height: 30px;;
   .infoContainer{
     padding: 20px;
   }
-  .rise{
-    width: 150px;
+  .rise, .risingNote{
+    width: 200px;
   }
   .menu{
     scale: 0.7;
   }
-    .menu li {
-    font-size: 16px;
-  }
+  
 }
