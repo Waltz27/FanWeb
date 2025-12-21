@@ -323,7 +323,6 @@ filter: opacity(1);
   align-items: center;
   width: 55px;
   height: 25px;
-  font-size: 1.75em;
   color: var(--color);
   transform: rotate(calc(360deg / -7 * var(--i)));
   border-radius: 50%;
@@ -362,32 +361,22 @@ filter: opacity(1);
   box-shadow: 0 0 0 6px var(--color);
 }
 .menu li:nth-child(2).active ~ .indicator {
-  transform: translateX(7px) translateY(-6px) rotate(0deg);
+  transform: translateX(-91px) translateY(-6px) rotate(0deg);
 }
 .menu li:nth-child(3).active ~ .indicator {
-  transform: translateX(19px) translateY(6px) rotate(45deg);
+  transform: translateX(-79px) translateY(6px) rotate(45deg);
 }
 .menu li:nth-child(4).active ~ .indicator {
-  transform: translateX(5px) translateY(20px) rotate(99deg);
+  transform: translateX(-94px) translateY(20px) rotate(99deg);
 }
 .menu li:nth-child(5).active ~ .indicator {
-  transform: translateX(-13px) translateY(35px) rotate(140deg);
+  transform: translateX(-112px) translateY(35px) rotate(140deg);
 }
 .menu li:nth-child(6).active ~ .indicator {
-  transform: translateX(-41px) translateY(17px) rotate(188deg);
+  transform: translateX(-139px) translateY(17px) rotate(188deg);
 }
 .menu li:nth-child(7).active ~ .indicator {
-  transform: translateX(-60px) translateY(-20px) rotate(225deg);
-}
-.color {
-  cursor: pointer;
-  transform: translateX(-3.6vw) translateY(0.3vw);
-  width: 2vw;
-  height: 2vw;
-  border-radius: 50%;
-  background-color: #7b667f;
-  opacity: 0;
-  transition: 0.3s ease-in;
+  transform: translateX(-160px) translateY(-20px) rotate(225deg);
 }
 /*Twitter*/
 .twitter {
@@ -961,6 +950,12 @@ height: 30px;;
   .rise{
     width: 150px;
   }
+  .menu{
+    scale: 0.7;
+  }
+  .menu li {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -980,5 +975,11 @@ height: 30px;;
   }
   .rise{
     width: 150px;
+  }
+  .menu{
+    scale: 0.7;
+  }
+    .menu li {
+    font-size: 16px;
   }
 }

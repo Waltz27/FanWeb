@@ -40,9 +40,8 @@ const Menu = () => {
           </a>
         </li>
         <li style={{ "--i": 2 }}>
-          <a href="#youtube">
-            <ion-icon name="logo-youtube"></ion-icon>
-            
+          <a href="#Info">
+            <ion-icon name="information-outline"></ion-icon>
           </a>
         </li>
         <li style={{ "--i": 3 }}>
@@ -51,22 +50,23 @@ const Menu = () => {
           </a>
         </li>
         <li style={{ "--i": 4 }}>
-          <a href="#gallery">
+           <a href="#youtube">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          
+        </li>
+        <li style={{ "--i": 5 }}>
+        <a href="#gallery">
           <ion-icon name="images-outline"></ion-icon>
           </a>
         </li>
-        <li style={{ "--i": 5 }}>
-          <a
+        <li style={{ "--i": 6 }}>
+           <a
             href="https://marshmallow-qa.com/pu__kapuka"
             target="_blank"
             rel="noreferrer"
           >
             <img src="https://ik.imagekit.io/4bkho8jgt/mashmallow_ETWmV0L0S.png" />
-          </a>
-        </li>
-        <li style={{ "--i": 6 }}>
-          <a href="#Info">
-            <ion-icon name="information-outline"></ion-icon>
           </a>
         </li>
        
