@@ -1,16 +1,3 @@
-@media (max-width: 768px) {
-  .headerIntro {
-    display: none;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1023px) {
-  .welcome-image {
-    width: 25vw !important;
-  }
-  .text-container {
-    font-size: 1.5vw !important;
-  }
-}
 @font-face {
     font-family: '07TetsubinGothic';
     src: url('/font/07TetsubinGothic.woff') format('woff');
@@ -968,6 +955,12 @@ height: 30px;;
   .infoContainer{
     padding: 20px;
   }
+  .yt-playlist-page, .yt-playlist-children {
+    gap: 12px;
+  }
+  .rise{
+    width: 150px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -984,5 +977,8 @@ height: 30px;;
   }
   .infoContainer{
     padding: 20px;
+  }
+  .rise{
+    width: 150px;
   }
 }
