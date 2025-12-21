@@ -149,6 +149,7 @@ place-items: center;
   display: grid;
   place-items: center;
   transition: 0.7s ease-in;
+  cursor: pointer;
 }
 @media (max-width: 1366px) {
   .video-thumbnail  {
