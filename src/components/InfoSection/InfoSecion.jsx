@@ -14,7 +14,7 @@ export default function InfoSection() {
     自己紹介
     </ScrollFloat>
     <div className="info-section bound observe hidden" id="Info">
-        <a className="info-row" href="https://www.youtube.com/@KotomiUki/featured" target="_blank"> 
+        <div className="info-row"> 
             <div className="info-text">
             <div className="text-version v1">
                 <h1>私の趣味～</h1>
@@ -31,6 +31,7 @@ export default function InfoSection() {
             </div>
             </div>
             <div className="info-image">
+            <a href="https://www.youtube.com/@KotomiUki/featured" target="_blank">
             <img
                 className="img-version v1"
                 src="https://ik.imagekit.io/4bkho8jgt/thumbnail_lH1rJI9J5.jpg"
@@ -41,9 +42,10 @@ export default function InfoSection() {
                 src="https://ik.imagekit.io/4bkho8jgt/thumbnail%20ver-2_jVWb4RR5B.jpg"
                 alt="Version 2"
             />
+            </a>
             </div>
-        </a>
-        <a className="info-row reverse" href="https://www.youtube.com/@KotomiUki/featured" target="_blank">
+        </div>
+        <div className="info-row reverse">
             <div className="info-text">
             <div className="text-version v1">
                 <h1>チャンネルイベント</h1>
@@ -62,6 +64,7 @@ export default function InfoSection() {
             </div>
 
             <div className="info-image">
+            <a href="https://www.youtube.com/@KotomiUki/featured" target="_blank">
             <img
                 className="img-version v1"
                 src="https://ik.imagekit.io/4bkho8jgt/thumbnail-2_iNKq7birE.jpg"
@@ -72,8 +75,9 @@ export default function InfoSection() {
                 src="https://ik.imagekit.io/4bkho8jgt/thumbnail-2%20ver-2_YX0Txvgop.jpg"
                 alt="Version 2"
             />
+            </a>
             </div>
-        </a>
+        </div>
     </div>
     </>
   );

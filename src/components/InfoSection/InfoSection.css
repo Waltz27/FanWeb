@@ -17,7 +17,6 @@
   gap: 20px;
   width:100%;
   align-items: center;
-  cursor: pointer;
 }
 
 .info-row.reverse {
@@ -65,6 +64,7 @@
   position: relative;
   width: 100%;
   max-width: 600px;
+  cursor: pointer;
 }
 
 .img-version {
