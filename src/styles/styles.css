@@ -138,6 +138,7 @@ body {
 .position-6 { bottom:0 ; right: 0; }
 .position-7 { bottom:0; left: 0; }
 .position-8 { top:0; left: 55%; }
+.position-9 { bottom:20%; right: 65%; }
 
 .infoContainer{
   width:100%;

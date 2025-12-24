@@ -19,6 +19,7 @@ const fanArts = [
   "https://ik.imagekit.io/4bkho8jgt/fanart-5_1do1ZDnAS.png",
   "https://ik.imagekit.io/4bkho8jgt/fanart-7_ZzUWHzg-Yt.png",
   "https://ik.imagekit.io/4bkho8jgt/%E3%81%AB%E3%81%92%E3%82%8B%EF%BD%9E%EF%BD%9E_jkt09SniB.png",
+  "https://ik.imagekit.io/4bkho8jgt/2dc2b94a-6707-4995-aad4-739434c96bd6_j3YJovaN5.jpg",
 ];
 
 const positions = [
@@ -30,6 +31,7 @@ const positions = [
   "position-6",
   "position-7",
   "position-8",
+  "position-9",
 ];
 
 const randomFanArts = fanArts.map((img, index) => {
@@ -79,8 +81,8 @@ useEffect(() => {
       opacity: 1,
       scale: 1,
       filter: "blur(0px)",
-      duration: 1,
-      ease: "power2.out",
+      duration: 1.3,
+      ease: "ease.inOut",
       stagger: 0.15
     })
     .to(".fan-art", {
