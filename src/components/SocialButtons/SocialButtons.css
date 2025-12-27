@@ -1,0 +1,35 @@
+.social-bubble {
+  transform: translateY(12px) scale(0.85);
+}
+
+.socialButtons {
+  display: flex;
+  gap: 20px;
+  align-items:center;
+  justify-content: space-evenly;
+  width: 70%;
+}
+
+.socialButton {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor:pointer;
+  z-index: 999;
+}
+
+.socialButton img {
+  width: 55%;
+  height: 55%;
+  object-fit: contain;
+}
+
+.socialButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}

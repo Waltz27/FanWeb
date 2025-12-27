@@ -1,9 +1,8 @@
 import  { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import './../Gallery/bounceCard.css';
-import BounceCards from "../Gallery/bounceCard";
 import { videoPlaylists } from "../../data/videoPlaylists";
+import SocialButtons from "../SocialButtons/SocialButtons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,11 +87,13 @@ useEffect(() => {
     .to(".fan-art", {
       opacity: 0,
       duration: 0.5,
+      zIndex:0,
       ease: "power2.out",
     })
      .to(".floating-text", { opacity: 1, duration: 0.3, ease: "ease.inOut", stagger: 0.3 }, "-=0.2")
     .to(".infoContainer-text", { opacity: 1, duration: 1, ease: "ease.inOut", stagger: 0.2 }, "-=0.2")
     .to(".infoDescription", { opacity: 1, duration: 1.5, ease: "ease.inOut", stagger: 0.2 }, "-=1.2")
+    .to(".social-bubble",{opacity: 1,y: 0,scale: 1,duration: 0.6,ease: "power3.out",stagger: 0.15,},"-=0.6")
     .to(".infoBounceCardBox", { opacity: 1, duration: 1.5, ease: "ease.inOut", stagger: 0.2 }, "-=1.2")
      .to(".infoImageBox", { opacity: 1, duration: 1.5, ease: "ease.inOut", stagger: 0.2 }, "-=1.2")
     .to(".menu-position", { opacity: 1, position: "fixed", duration: 0.4 })
@@ -149,22 +150,18 @@ useEffect(() => {
                     歌いながらポケモンをするバーチャル女、コトミ ウキです！！
                   </p>
                 </div>
-                <BounceCards className="infoBounceCardBox"
-                  images={[
-                    "https://ik.imagekit.io/4bkho8jgt/x_F9vsMCecO.png?updatedAt=1761479547373",
-                    "https://ik.imagekit.io/4bkho8jgt/Youtube_logo_KIJM9rBwU.png?updatedAt=1761479421137",
-                    "https://ik.imagekit.io/4bkho8jgt/logo_SExFzH44G.png?updatedAt=1682306862703",
-                  ]}
-                  links={[
-                    "https://x.com/pu__kapuka",
-                    "https://www.youtube.com/@KotomiUki",
-                    "https://profcard.info/u/Ojt29bIE8HeF1xwg4y6xfCaCUjQ2",
-                  ]}
-                  containerWidth={500}
-                  containerHeight={300}
-                  animationDelay={0.4}
-                  animationStagger={0.1}
-                />
+            <SocialButtons
+              images={[
+                "https://ik.imagekit.io/4bkho8jgt/x_F9vsMCecO.png?updatedAt=1761479547373",
+                "https://ik.imagekit.io/4bkho8jgt/Youtube_logo_KIJM9rBwU.png?updatedAt=1761479421137",
+                "https://ik.imagekit.io/4bkho8jgt/logo_SExFzH44G.png?updatedAt=1682306862703",
+              ]}
+              links={[
+                "https://x.com/pu__kapuka",
+                "https://www.youtube.com/@KotomiUki",
+                "https://profcard.info/u/Ojt29bIE8HeF1xwg4y6xfCaCUjQ2",
+              ]}
+            />
               </div>
               <div className="infoImageBox"/>
             </div>
