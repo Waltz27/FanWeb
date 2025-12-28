@@ -7,6 +7,7 @@ import HorizontalGallery from "../components/Gallery/horizontal-gallery";
 import ClickSpark from "../components/ClickSpark";
 import YoutubeBubbles from "../components/YoutubeSection/YoutubeBubbles";
 import InfoSection from "../components/InfoSection/InfoSecion";
+import BirthdayDrop from "../components/PresentBox/PresentBox";
 
 const Home = () => {
   useEffect(() => {
@@ -51,6 +52,7 @@ const Home = () => {
           <YoutubeBubbles/>
           <TwitterCard />
           <HorizontalGallery />
+          <BirthdayDrop />
           <Footer />
         </div>
       </ClickSpark>

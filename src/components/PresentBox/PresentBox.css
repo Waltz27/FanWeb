@@ -1,0 +1,105 @@
+html {
+  transition: background-color 0.5s ease;
+}
+
+.birthday-section {
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/* ===== PRESENT BOX ===== */
+
+.present-box {
+  position: fixed;
+  top: 0;
+  width: 180px;
+  height: 160px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.present-lid {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  background: #e63946;
+  border-radius: 12px 12px 6px 6px;
+  transform-origin: center bottom;
+}
+
+.present-body {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: #d62828;
+  border-radius: 6px 6px 12px 12px;
+}
+
+/* ===== RIBBONS ===== */
+
+.ribbon {
+  position: absolute;
+  background: gold;
+}
+
+.ribbon-horizontal {
+  height: 10px;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ribbon-vertical {
+  width: 10px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ===== CONTENT ===== */
+
+.birthday-content {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.birthday-text {
+  padding-top:80px;
+  font-size: 4rem;
+}
+
+
+.image-area {
+  position: fixed;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 14px;
+  pointer-events: none;
+}
+
+.floating-frame {
+  width: 140px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.floating-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
