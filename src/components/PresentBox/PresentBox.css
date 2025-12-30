@@ -186,3 +186,17 @@ html {
   }
 }
 
+@media (max-width: 1366px) {
+.floating-frame{
+  width: 90px;
+  height: 90px;
+}
+}
+
+@media (max-width: 1024px) {
+.floating-frame{
+  width: 90px;
+  height: 90px;
+}
+  
+}

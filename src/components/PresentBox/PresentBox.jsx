@@ -33,13 +33,13 @@ export default function BirthdayDrop() {
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "center-140px center",
-          toggleActions: "play reverse play reverse",
+          toggleActions: "play none play reverse",
           onEnter: () =>
             gsap.to(document.documentElement, {
               backgroundColor: "#191919",
               duration: 0.6
             }),
-             onLeave: () => {},
+
           onLeaveBack: () => {
             openTl.current?.reverse();
             setOpened(false);
