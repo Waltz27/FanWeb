@@ -32,7 +32,7 @@ export default function BirthdayDrop() {
       fallTl.current = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "center-140px center",
+          start: "center center",
           toggleActions: "play none play reverse",
           onEnter: () =>
             gsap.to(document.documentElement, {

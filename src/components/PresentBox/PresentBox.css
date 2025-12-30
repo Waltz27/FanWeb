@@ -17,10 +17,6 @@ html {
   cursor: pointer;
   z-index: 10;
 }
-.present-box:hover{
-  scale: 1.03;
-  transition: all 0.3s ease-in;
-}
 .present-lid {
   position: absolute;
   top: 0;
@@ -191,6 +187,16 @@ html {
   width: 90px;
   height: 90px;
 }
+.birthday-text {
+  padding-top:0px;
+  font-size:2rem ;
+}
+.cake {
+  bottom:10%;
+}
+.present-box{
+  scale: 0.9;
+}
 }
 
 @media (max-width: 1024px) {
@@ -198,5 +204,14 @@ html {
   width: 90px;
   height: 90px;
 }
-  
+  .birthday-text {
+  padding-top:0px;
+  font-size:2rem ;
+}
+.cake {
+  bottom:10%;
+}
+.present-box{
+  scale: 0.9;
+}
 }
