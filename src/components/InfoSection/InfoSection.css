@@ -94,7 +94,6 @@
 }
 
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .info-row {
     grid-template-columns: 1fr;

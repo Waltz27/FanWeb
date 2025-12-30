@@ -956,6 +956,9 @@ height: 30px;;
   .menu{
     scale: 0.7;
   }
+  .infoTextContainer{
+    gap: 60px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -979,5 +982,7 @@ height: 30px;;
   .menu{
     scale: 0.7;
   }
-  
+  .infoTextContainer{
+    gap: 60px;
+  }
 }
