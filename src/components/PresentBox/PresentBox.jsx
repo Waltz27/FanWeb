@@ -29,17 +29,17 @@ export default function BirthdayDrop() {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      /** FALLING BOX TIMELINE **/
       fallTl.current = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top center",
+          start: "center-140px center",
           toggleActions: "play reverse play reverse",
           onEnter: () =>
             gsap.to(document.documentElement, {
               backgroundColor: "#191919",
               duration: 0.6
             }),
+             onLeave: () => {},
           onLeaveBack: () => {
             openTl.current?.reverse();
             setOpened(false);
@@ -172,7 +172,7 @@ useLayoutEffect(() => {
         textClassName="birthday-text"
         
       >
-       Uki-chan ! Happy Birthday！！！
+       Uki-chan ! お誕生日おめでとうございます！！
       </ScrollFloat>   
          <div className="cake-wrapper">
           <div className="cake">
