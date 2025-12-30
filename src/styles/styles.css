@@ -929,7 +929,7 @@ height: 30px;;
 .copyright {
   font-size: 0.8em;
   opacity: 0.85;
-  color: #191919;
+  color: white;
 }
 @media (max-width: 1366px) {
   h1 {

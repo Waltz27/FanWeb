@@ -74,12 +74,13 @@ html {
 .birthday-text {
   padding-top:80px;
   font-size: 4rem;
+  color:white;
 }
 
 
 .image-area {
   position: fixed;
-  bottom: 20%;
+  bottom: 50%;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -88,9 +89,10 @@ html {
 }
 
 .floating-frame {
-  width: 140px;
+  width: 150px;
+  height: 150px;
   padding: 10px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 14px;
   backdrop-filter: blur(8px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
@@ -101,5 +103,85 @@ html {
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
+}
+/* 🎂 CAKE WRAPPER */
+.cake-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0 60px;
+  pointer-events: none;
+}
+
+/* CAKE BASE */
+.cake {
+  position: absolute;
+  bottom:20%;
+  width: 160px;
+  height: 140px;
+}
+
+/* LAYERS */
+.cake-layer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 14px;
+}
+
+.layer-bottom {
+  bottom: 0;
+  width: 160px;
+  height: 50px;
+  background: #d99bc7;
+}
+
+.layer-middle {
+  bottom: 45px;
+  width: 130px;
+  height: 45px;
+  background: #e6b3d9;
+}
+
+.layer-top {
+  bottom: 85px;
+  width: 100px;
+  height: 40px;
+  background: #f2cce9;
+}
+
+/* 🎂 CANDLE */
+.candle {
+  position: absolute;
+  bottom: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 28px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+/* 🔥 FLAME */
+.flame {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12px;
+  height: 16px;
+  background: radial-gradient(circle at 50% 60%, #fff6a0, #ff9f43);
+  border-radius: 50% 50% 50% 50%;
+  animation: flicker 0.9s infinite alternate;
+}
+
+@keyframes flicker {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateX(-50%) scale(1.15);
+    opacity: 1;
+  }
 }
 

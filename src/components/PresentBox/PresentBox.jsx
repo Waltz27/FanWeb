@@ -37,11 +37,10 @@ export default function BirthdayDrop() {
           toggleActions: "play reverse play reverse",
           onEnter: () =>
             gsap.to(document.documentElement, {
-              backgroundColor: "#7b667f",
+              backgroundColor: "#191919",
               duration: 0.6
             }),
           onLeaveBack: () => {
-            // Reset open animation
             openTl.current?.reverse();
             setOpened(false);
 
@@ -67,10 +66,11 @@ useLayoutEffect(() => {
 
   const frames = gsap.utils.toArray(".floating-frame");
 
-  // Kill any previous tweens
+  
   gsap.killTweensOf(frames);
+  gsap.killTweensOf(".cake");
 
-  // Entrance timeline (STAGGER)
+
   const appearTl = gsap.timeline();
 
   appearTl.fromTo(
@@ -87,11 +87,26 @@ useLayoutEffect(() => {
       y: () => gsap.utils.random(-120, 80),
       duration: 0.6,
       ease: "power3.out",
-      stagger: 0.12 
+      stagger: 0.12
     }
   );
 
- 
+  appearTl.fromTo(
+    ".cake",
+    {
+      opacity: 0,
+      y: 40,
+      scale: 0.9
+    },
+    {
+      opacity: 1,
+      y: 0,
+      scale: 1.2,
+      duration: 0.8,
+      ease: "back.out(1.6)"
+    },
+    "-=0.3" 
+  );
   appearTl.add(() => {
     frames.forEach((frame) => {
       gsap.to(frame, {
@@ -106,10 +121,9 @@ useLayoutEffect(() => {
 
   return () => {
     gsap.killTweensOf(frames);
+    gsap.killTweensOf(".cake");
   };
 }, [opened]);
-
-
 
   const openBox = () => {
     if (opened) return;
@@ -160,6 +174,17 @@ useLayoutEffect(() => {
       >
        Uki-chan ! Happy Birthday！！！
       </ScrollFloat>   
+         <div className="cake-wrapper">
+          <div className="cake">
+            <div className="cake-layer layer-bottom" />
+            <div className="cake-layer layer-middle" />
+            <div className="cake-layer layer-top" />
+
+            <div className="candle">
+              <div className="flame" />
+            </div>
+          </div>
+        </div>
          <div className="image-area">
         {birthdayImages.map((src, index) => (
             <div className="floating-frame" key={index}>
