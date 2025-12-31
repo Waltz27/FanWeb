@@ -209,17 +209,14 @@ body {
   overflow: hidden;
   transition: transform 0.3s ease;
 }
-
 .video-link:hover {
   transform: scale(1.02);
 }
-
 .video-background {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .floating-text, .infoDescription, .infoBounceCardBox{
   opacity:0;
 }

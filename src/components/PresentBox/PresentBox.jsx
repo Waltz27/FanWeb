@@ -172,7 +172,7 @@ useLayoutEffect(() => {
         textClassName="birthday-text"
         
       >
-       Uki-chan ! お誕生日おめでとうございます！！
+       ウキちゃん！ お誕生日おめでとうございます！！
       </ScrollFloat>   
          <div className="cake-wrapper">
           <div className="cake">
