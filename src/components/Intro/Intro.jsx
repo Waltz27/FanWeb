@@ -47,7 +47,7 @@ useEffect(() => {
   const videos = videoPlaylists[randomYear];
   const randomVideoId = videos[Math.floor(Math.random() * videos.length)];
 
-  const thumbnail = `https://img.youtube.com/vi/${randomVideoId.id}/maxresdefault.jpg`; 
+  const thumbnail = `https://img.youtube.com/vi/-86SRRv08J0/maxresdefault.jpg`; 
 
   setThumbnailUrl(thumbnail);
 }, []);
