@@ -80,15 +80,15 @@ useEffect(() => {
       opacity: 1,
       scale: 1,
       filter: "blur(0px)",
-      duration: 1.3,
-      ease: "ease.inOut",
+      duration: 1.8,
+      ease: "power3.out",
       stagger: 0.15
     })
     .to(".fan-art", {
       opacity: 0,
-      duration: 0.5,
+      duration: 0.3,
       zIndex:0,
-      ease: "power2.out",
+     ease: "ease.inOut",
     })
      .to(".floating-text", { opacity: 1, duration: 0.3, ease: "ease.inOut", stagger: 0.3 }, "-=0.2")
     .to(".infoContainer-text", { opacity: 1, duration: 1, ease: "ease.inOut", stagger: 0.2 }, "-=0.2")
