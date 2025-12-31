@@ -69,8 +69,8 @@ useEffect(() => {
   timeline
     .to(".rise", { duration: 1, opacity: 1, ease: "ease.out" })
     .to(".risingNote", { duration: 2, opacity: 1, y: "-30vh", ease: "ease.out" },"<")
-    .to(".rise", { duration: 2, y: "20vh",opacity: 0, ease: "ease.out" } )
-    .to(".risingNote", {duration: 0.2,opacity: 0, ease: "ease.out"})
+    .to(".rise", { duration: 1.5, y: "15vh",opacity: 0, ease: "ease.out" } )
+    .to(".risingNote", {duration: 1.3, filter: "blur(50px)", ease: "power3.inOut"},"<")
     .add(() => {
       body.classList.remove("unscrollable");
     })
