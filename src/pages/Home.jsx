@@ -52,7 +52,7 @@ const Home = () => {
           <YoutubeBubbles/>
           <TwitterCard />
           <HorizontalGallery />
-          <BirthdayDrop />
+          {/* <BirthdayDrop /> */}
           <Footer />
         </div>
       </ClickSpark>
